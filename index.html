@@ -3,24 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motorista Profissional - Seu Nome</title>
+    <title>Motorista Particular - Diego</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        header { background: #007BFF; color: white; padding: 20px; font-size: 24px; }
-        section { margin: 20px; }
-        a { text-decoration: none; color: #007BFF; font-weight: bold; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background: #ce3959;
+            color: white;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+            margin-top: 10px;
+        }
+        .contact-btn {
+            display: block;
+            background: #252f3a;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 10px 0;
+            transition: 0.3s;
+        }
+        .contact-btn:hover {
+            background: #0056b3;
+        }
+        .contact-btn img {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
-    <header>🚗 Motorista Particular - Seu Nome</header>
-    <section>
-        <h2>Sobre Mim</h2>
-        <p>Olá! Sou motorista profissional com experiência nos aplicativos Uber, 99 e Indrive.</p>
-    </section>
-    <section>
-        <h2>Entre em Contato</h2>
-        <p>📞 WhatsApp: <a href="https://wa.me/seunumerodetelefone" target="_blank">Clique aqui</a></p>
-        <p>📷 Instagram: <a href="https://instagram.com/seuinstagram" target="_blank">@seuinstagram</a></p>
-    </section>
+
+    <div class="container">
+        <header>🚗 Motorista Particular - DIEGO</header>
+
+        <div class="content">
+            <img src="https://via.placeholder.com/100" alt="Perfil" class="profile-img">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou motorista profissional com experiência nos aplicativos de transporte, faco viagens particulares. Faço viagens seguras, rápidas e com conforto.</p>
+
+            <h2>Entre em Contato</h2>
+            <a href="https://wa.me/5521984657225" target="_blank" class="contact-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                Fale comigo no WhatsApp
+            </a>
+            <a href="https://instagram.com/seuinstagram" target="_blank" class="contact-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                Meu Instagram
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
+
