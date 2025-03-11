@@ -1,91 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motorista Particular - Diego</title>
+    <title>Motorista por Aplicativo</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
-            padding: 20px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 500px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
-        header {
-            background: #ce3959;
-            color: white;
-            padding: 15px;
-            font-size: 22px;
-            font-weight: bold;
-            border-radius: 10px 10px 0 0;
+        .container:hover {
+            transform: scale(1.05);
         }
-        .content {
-            padding: 20px;
-        }
-        .profile-img {
-            width: 100px;
-            height: 100px;
+        .profile-pic {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 3px solid #007BFF;
-            margin-top: 10px;
+            object-fit: cover;
+            border: 3px solid #25D366;
         }
-        .contact-btn {
-            display: block;
-            background: #252f3a;
-            color: white;
-            text-decoration: none;
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 15px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        ul li {
+            background: #f4f4f4;
+            margin: 5px 0;
             padding: 10px;
             border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            text-decoration: none;
             font-size: 18px;
-            margin: 10px 0;
-            transition: 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
         }
-        .contact-btn:hover {
-            background: #0056b3;
-        }
-        .contact-btn img {
-            width: 20px;
-            vertical-align: middle;
-            margin-right: 8px;
+        .btn-whatsapp:hover {
+            background: linear-gradient(135deg, #128C7E, #25D366);
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <header>🚗 Motorista Particular - DIEGO</header>
-
-        <div class="content">
-            <img src="https://via.placeholder.com/100" alt="Perfil" class="profile-img">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Sou motorista profissional com experiência nos aplicativos de transporte, faco viagens particulares. Faço viagens seguras, rápidas e com conforto.</p>
-
-            <h2>Entre em Contato</h2>
-            <a href="https://wa.me/5521984657225" target="_blank" class="contact-btn">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-                Fale comigo no WhatsApp
-            </a>
-            <a href="https://instagram.com/seuinstagram" target="_blank" class="contact-btn">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                Meu Instagram
-            </a>
-        </div>
+        <img src="myphoto.jpg" alt="Sua Foto" class="profile-pic">
+        <h1>Diego</h1>
+        <p>Motorista por Aplicativos no Rio de Janeiro</p>
+        <p>Viagens seguras e confortáveis, atendendo grande parte da cidade e Niterói</p>
+        
+        <ul>
+            <li>🚖 Transporte para aeroportos</li>
+            <li>🛣️ Viagens longas para outras cidades</li>
+            <li>🎉 Transporte para eventos e festas</li>
+        </ul>
+        
+        <a href="https://wa.me/5521984657225" class="btn-whatsapp" target="_blank">Fale comigo no WhatsApp</a>
     </div>
-
 </body>
 </html>
-
